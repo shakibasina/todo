@@ -165,3 +165,9 @@ body{
 .text{
   color: var(--text-color);
 }
+.dragging{
+  opacity: 0.5;
+}
+.card{
+  cursor: all-scroll;
+}
