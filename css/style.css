@@ -1,0 +1,167 @@
+@font-face {
+  font-family: "Yekan";
+  src: url("../fonts/Yekan.eot");
+  src: url("../fonts/Yekan.woff") format("woff"),
+  url("../fonts/Yekan.ttf") format("opentype"),
+  url("../fonts/Yekan.svg") format("svg");
+}
+@font-face {
+  font-family: 'YekanBakhFat';
+  src: url("../fonts/Yekan-Bakh-FaNum-08-Fat.eot");
+  src: url("../fonts/Yekan-Bakh-FaNum-08-Fat.woff") format("woff"),
+  url("../fonts/Yekan-Bakh-FaNum-08-Fat.ttf") format("opentype"),
+  url('../fonts/YekanBakhFaNum-Fat.woff2') format('woff2'),
+  url('../fonts/YekanBakhFaNum-Fat.svg') format('svg');
+}
+@font-face {
+  font-family: 'YekanBakhHeavy';
+  src: url("../fonts/Yekan-Bakh-FaNum-07-Heavy.eot");
+  src: url("../fonts/Yekan-Bakh-FaNum-07-Heavy.woff") format("woff"),
+  url("../fonts/Yekan-Bakh-FaNum-07-Heavy.ttf") format("opentype"),
+  url('../fonts/YekanBakhFaNum-Heavy.woff2') format('woff2'),
+  url('../fonts/YekanBakhFaNum-Heavy.svg') format('svg');
+}
+@font-face {
+  font-family: 'YekanBakh';
+  src: url("../fonts/Yekan-Bakh-FaNum-04-Regular.eot");
+  src: url("../fonts/Yekan-Bakh-FaNum-04-Regular.woff") format("woff"),
+  url("../fonts/Yekan-Bakh-FaNum-04-Regular.ttf") format("opentype"),
+  url('../fonts/YekanBakhFaNum-Regular.woff2') format('woff2'),
+  url('../fonts/YekanBakhFaNum-Regular.svg') format('svg');}
+@font-face {
+  font-family: "Fedra Arabic";
+  src: url("../fonts/fedra\ arabic.eot");
+  src: url("../fonts/fedra\ arabic.woff") format("woff"),
+  url("../fonts/fedra\ arabic.ttf") format("opentype"),
+}
+.yekan{
+  font-family: "Yekan";
+}
+.yekan-bakh{
+  font-family: "YekanBakh";
+}
+.font-bold{
+  font-family: "YekanBakhHeavy";
+}
+.font-extrabold{
+  font-family: "YekanBakhFat";
+  font-weight: 800;
+}
+
+body{
+  --image-bg: url("../img/dark-bg.jpg");
+  --page-bg: #000000;
+  --linear-bg: #00014b;
+  --text-color: #eee;
+  --text-header-color: #eee;
+  --linear-gradient: linear-gradient(rgba(0, 0, 255, 0.493), rgba(128, 0, 128, 0.589));
+}
+
+body.light{
+  --image-bg: url("../img/light-bg.jpg");
+  --page-bg: #eee;
+  --linear-bg: #fff;
+  --text-header-color: #ffffff;
+  --text-color: #000000;
+  --linear-gradient: linear-gradient(rgba(0, 0, 255, 0.61), rgba(128, 0, 128, 0.3));
+}
+
+body{
+  font-family: "YekanBakh";
+  background-color: var(--page-bg);
+  overflow-x: hidden;
+}
+
+.header{
+  width: 100%;
+  height: 400px;
+  background-image: var(--image-bg);
+  background-color: #000b3a6c;
+  background-repeat: round;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+}
+.header::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: var(--linear-gradient);
+  pointer-events: none;
+}
+.header-title{
+  color: var(--text-header-color);
+  position: absolute;
+  font-size: 40px;
+  font-family: "YekanBakhFat";
+  font-weight: 800;
+  z-index: 1;
+  top: 47%;
+  left: 38%;
+}
+
+.theme{
+  color: var(--text-header-color);
+  position: absolute;
+  font-size: 20px;
+  z-index: 1;
+  top: 20%;
+  left: 20%;
+  cursor: pointer;
+}
+.main{
+  position: absolute;
+  top: 40%;
+  width: 140%;
+  z-index: 10;
+  right: 15%;
+}
+.add-work{
+  background-color: var(--linear-bg);
+  border-radius: 10px;
+}
+.input-work{
+  padding: 30px;
+  background-color: transparent;
+  border: none;
+  color: var(--text-color);
+  opacity: 0.9;
+  font-size: 15px;
+}
+.icon-work{
+  color: var(--text-color);
+  opacity: 0.9;
+  pointer-events: pointer;
+  cursor: pointer;
+  font-size: 20px;
+}
+.works{
+  background-color: var(--linear-bg);
+  border-radius: 10px;
+  padding: 15px 0 15px 0;
+}
+.work{
+  color: var(--text-color);
+  font-size: 15px;
+}
+.checkbox{
+  border-radius: 50%;
+  padding: 10px;
+  background-color: #aaa;
+}
+.work-delete-icon{
+  color: var(--text-color);
+  cursor: pointer;
+}
+.card{
+  background-color: transparent;
+  border-radius: 0;
+  border: none;
+}
+.text{
+  color: var(--text-color);
+}
